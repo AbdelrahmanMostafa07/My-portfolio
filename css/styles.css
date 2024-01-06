@@ -11118,19 +11118,19 @@ body {
 .about-section p {
   margin-bottom: 2rem;
 }
-
 .projects-section {
     padding: 10rem 0;
-    position: relative;
-}
-
-.projects-section .row {
-    position: relative;
 }
 
 .projects-section .col-lg-4 {
-    display: flex;
-    align-items: stretch;
+    padding: 1rem;
+}
+
+.projects-section .project-img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 0; /* Remove border-radius for squared edges */
 }
 
 .projects-section .project-overlay {
@@ -11143,51 +11143,20 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.projects-section .project-text {
-    padding: 3rem;
-    font-size: 90%;
-    position: relative;
+.projects-section .col-lg-4:hover .project-overlay {
+    opacity: 1;
 }
 
 @media (min-width: 992px) {
     .projects-section .project-text {
         padding: 5rem;
     }
-}
-
-.projects-section .img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-.projects-section .project-img {
-    width: 100%;
-    max-height: 300px; /* Adjust the max-height as needed */
-    object-fit: cover;
-    border-radius: 0; /* Add border-radius for a rounded appearance */
-    overflow: hidden; /* Hide any overflowing content */
-}
-
-.projects-section .project-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
-    border-radius: 10px; /* Match the border-radius of the image */
-    opacity: 0; /* Initially make it transparent */
-    transition: opacity 0.3s ease; /* Add a smooth transition effect */
-}
-
-.projects-section .project-overlay:hover {
-    opacity: 1; /* Make the overlay visible on hover */
 }
 
 .signup-section {
