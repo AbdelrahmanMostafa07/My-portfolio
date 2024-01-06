@@ -44,6 +44,11 @@
         .footer {
             background-color: #fff !important; /* يقوم بتحديد لون الخلفية للشريط السفلي */
         }
+
+        /* إزالة علامة النشاط بالشريط عند التمرير */
+        .projects-section.navbar-nav .nav-link.active::after {
+            display: none;
+        }
         
     </style>
 </head>
