@@ -11166,7 +11166,7 @@ body {
     width: 100%;
     max-height: 300px; /* Adjust the max-height as needed */
     object-fit: cover;
-    border-radius: 10px; /* Add border-radius for a rounded appearance */
+    border-radius: 0; /* Add border-radius for a rounded appearance */
     overflow: hidden; /* Hide any overflowing content */
 }
 
