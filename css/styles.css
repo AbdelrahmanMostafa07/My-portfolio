@@ -11119,8 +11119,8 @@ body {
   margin-bottom: 2rem;
 }
 
-.project-text h4 a {
-  text-decoration: none; /* Remove underline */
+.position-relative {
+  position: relative;
 }
 
 .project-overlay {
@@ -11138,6 +11138,11 @@ body {
 
 .col-lg-6:hover .project-overlay {
     opacity: 1;
+}
+
+.project-overlay h4,
+.project-overlay p {
+    margin: 0;
 }
 
 .signup-section {
