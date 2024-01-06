@@ -11128,12 +11128,21 @@ body {
     position: relative;
 }
 
+.projects-section .col-lg-4 {
+    display: flex;
+    align-items: stretch;
+}
+
 .projects-section .project-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .projects-section .project-text {
@@ -11145,17 +11154,6 @@ body {
 @media (min-width: 992px) {
     .projects-section .project-text {
         padding: 5rem;
-    }
-}
-
-.projects-section .featured-text {
-    padding: 2rem;
-}
-
-@media (min-width: 992px) {
-    .projects-section .featured-text {
-        padding: 0 0 0 2rem;
-        border-left: 0.5rem solid #64a19d;
     }
 }
 
