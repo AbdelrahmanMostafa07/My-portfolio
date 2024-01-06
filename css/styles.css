@@ -11120,32 +11120,32 @@ body {
 }
 
 .projects-section {
-    padding: 10rem 0;
-    position: relative; /* Add this to make position: absolute in child elements relative to this section */
+  padding: 10rem 0;
+  position: relative;
 }
 
 .projects-section .row {
-    position: relative; /* Add this to make position: absolute in child elements relative to each row */
+  position: relative;
 }
 
 .projects-section .project-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .projects-section .project-text {
-    padding: 3rem;
-    font-size: 90%;
-    position: relative; /* Add this to make position: absolute in child elements relative to this text container */
+  padding: 3rem;
+  font-size: 90%;
+  position: relative;
 }
 
 @media (min-width: 992px) {
-    .projects-section .project-text {
-        padding: 5rem;
-    }
+  .projects-section .project-text {
+      padding: 5rem;
+  }
 }
 
 .projects-section .featured-text {
