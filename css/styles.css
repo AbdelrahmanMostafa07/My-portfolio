@@ -11164,8 +11164,30 @@ body {
 
 .projects-section .project-img {
     width: 100%;
-    max-height: 400px; /* Adjust the max-height as needed */
+    max-height: 300px; /* Adjust the max-height as needed */
     object-fit: cover;
+    border-radius: 10px; /* Add border-radius for a rounded appearance */
+    overflow: hidden; /* Hide any overflowing content */
+}
+
+.projects-section .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+    border-radius: 10px; /* Match the border-radius of the image */
+    opacity: 0; /* Initially make it transparent */
+    transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
+.projects-section .project-overlay:hover {
+    opacity: 1; /* Make the overlay visible on hover */
 }
 
 .signup-section {
