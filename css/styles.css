@@ -11174,6 +11174,10 @@ body {
     margin-bottom: 10px;
 }
 
+.project-text h4 a {
+    text-decoration: none; /* Remove underline from anchor tags within h4 */
+}
+
 .project-text p {
     font-size: 14px;
     margin: 0;
