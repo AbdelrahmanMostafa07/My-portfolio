@@ -11118,6 +11118,7 @@ body {
 .about-section p {
   margin-bottom: 2rem;
 }
+
 .projects-section {
     padding: 10rem 0;
 }
@@ -11125,10 +11126,11 @@ body {
 .projects-section .col-lg-4 {
     padding: 2rem;
     margin-right: 20px; /* Adjust this value based on your preference */
+    margin-bottom: 20px; /* Adjust this value based on your preference */
 }
 
-/* Remove the right margin from the last item to prevent extra spacing */
-.projects-section .col-lg-4:last-child {
+/* Remove the right margin from the last item in each row to prevent extra spacing */
+.projects-section .col-lg-4:nth-child(3n) {
     margin-right: 0;
 }
 
@@ -11159,15 +11161,12 @@ body {
     .projects-section .project-text {
         padding: 5rem;
     }
-}
 
-/* For larger screens, create space between projects using margins */
-@media (min-width: 992px) {
+    /* For larger screens, create space between projects using margins */
     .projects-section .col-lg-4 {
         width: calc(33.3333% - 20px); /* 3 columns with 20px margin in between */
-        margin-right: 20px;
-        margin-bottom: 20px; /* Adjust this value based on your preference */
     }
+}
 
 .signup-section {
   padding: 10rem 0;
