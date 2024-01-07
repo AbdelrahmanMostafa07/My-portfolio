@@ -11120,7 +11120,7 @@ body {
 }
 
 .projects-section {
-    padding: 10rem 0;
+    padding: 5rem 0;
 }
 
 .projects-section .col-lg-4 {
@@ -11167,6 +11167,18 @@ body {
         width: calc(33.3333% - 20px); /* 3 columns with 20px margin in between */
     }
 }
+
+/* لتقليل هامش الأعلى والأسفل للعناصر في الصفوف */
+    .projects-section .row {
+        margin-top: -10px; /* يمكنك ضبط هذه القيمة وفقًا لاحتياجات التصميم */
+        margin-bottom: -10px; /* يمكنك ضبط هذه القيمة وفقًا لاحتياجات التصميم */
+    }
+
+    /* لتقليل هامش الأسفل من العناصر الأخيرة في الصفوف لتجنب المسافات الزائدة */
+    .projects-section .row:last-child .col-lg-4 {
+        margin-bottom: 4px;
+    }
+
 
 .signup-section {
   padding: 10rem 0;
