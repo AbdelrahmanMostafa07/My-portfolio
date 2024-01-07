@@ -11115,6 +11115,7 @@ body {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
+
 .about-section p {
   margin-bottom: 2rem;
 }
@@ -11142,7 +11143,17 @@ body {
     height: 100%;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease; /* Updated transition duration */
+}
+
+.project-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0; /* Initial opacity set to 0 */
+    transition: opacity 0.5s ease; /* Transition for opacity */
 }
 
 .project-card:hover .project-img {
@@ -11153,22 +11164,20 @@ body {
     opacity: 1;
 }
 
-.project-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.project-card:hover .project-text {
+    opacity: 1; /* Show text on hover */
 }
 
 .project-text h4 {
     font-size: 18px;
     margin-bottom: 10px;
+    color: #fff; /* Set text color */
 }
 
 .project-text p {
     font-size: 14px;
     margin: 0;
+    color: #fff; /* Set text color */
 }
 
 .signup-section {
