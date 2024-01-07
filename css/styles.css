@@ -11143,7 +11143,7 @@ body {
     height: 100%;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    transition: opacity 0.5s ease; /* Updated transition duration */
+    transition: opacity 0.5s ease;
 }
 
 .project-text {
@@ -11152,8 +11152,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    opacity: 0; /* Initial opacity set to 0 */
-    transition: opacity 0.5s ease; /* Transition for opacity */
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .project-card:hover .project-img {
@@ -11165,19 +11166,17 @@ body {
 }
 
 .project-card:hover .project-text {
-    opacity: 1; /* Show text on hover */
+    opacity: 1;
 }
 
 .project-text h4 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #fff; /* Set text color */
 }
 
 .project-text p {
     font-size: 14px;
     margin: 0;
-    color: #fff; /* Set text color */
 }
 
 .signup-section {
