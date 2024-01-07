@@ -11123,7 +11123,13 @@ body {
 }
 
 .projects-section .col-lg-4 {
-    padding: 8rem;
+    padding: 1rem;
+    margin-right: 20px; /* Adjust this value based on your preference */
+}
+
+/* Remove the right margin from the last item to prevent extra spacing */
+.projects-section .col-lg-4:last-child {
+    margin-right: 0;
 }
 
 .projects-section .project-img {
