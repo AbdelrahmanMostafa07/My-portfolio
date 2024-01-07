@@ -11120,65 +11120,56 @@ body {
 }
 
 .projects-section {
-    padding: 5rem 0;
+    padding: 80px 0;
 }
 
-.projects-section .col-lg-4 {
-    padding: 2rem;
-    margin-right: 20px; /* Adjust this value based on your preference */
-    margin-bottom: 20px; /* Adjust this value based on your preference */
+.project-card {
+    position: relative;
+    overflow: hidden;
 }
 
-/* Remove the right margin from the last item in each row to prevent extra spacing */
-.projects-section .col-lg-4:nth-child(3n) {
-    margin-right: 0;
+.project-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
-.projects-section .project-img {
-    width: 120%;
-    max-height: 320px;
-    object-fit: cover;
-    border-radius: 0; /* Remove border-radius for squared edges */
-}
-
-.projects-section .project-overlay {
+.project-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    width: 100%;
+    height: 100%;
     opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
     transition: opacity 0.3s ease;
 }
 
-@media (min-width: 992px) {
-    .projects-section .project-text {
-        padding: 5rem;
-    }
-
-    /* For larger screens, create space between projects using margins */
-    .projects-section .col-lg-4 {
-        width: calc(33.3333% - 20px); /* 3 columns with 20px margin in between */
-    }
+.project-card:hover .project-img {
+    transform: scale(1.1);
 }
 
-/* لتقليل هامش الأعلى والأسفل للعناصر في الصفوف */
-    .projects-section .row {
-        margin-top: -10px; /* يمكنك ضبط هذه القيمة وفقًا لاحتياجات التصميم */
-        margin-bottom: -10px; /* يمكنك ضبط هذه القيمة وفقًا لاحتياجات التصميم */
-    }
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
 
-    /* لتقليل هامش الأسفل من العناصر الأخيرة في الصفوف لتجنب المسافات الزائدة */
-    .projects-section .row:last-child .col-lg-4 {
-        margin-bottom: 4px;
-    }
+.project-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
+.project-text h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project-text p {
+    font-size: 14px;
+    margin: 0;
+}
 
 .signup-section {
   padding: 10rem 0;
