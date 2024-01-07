@@ -11119,11 +11119,11 @@ body {
   margin-bottom: 2rem;
 }
 .projects-section {
-    padding: 8rem 0;
+    padding: 10rem 0;
 }
 
 .projects-section .col-lg-4 {
-    padding: 1rem;
+    padding: 2rem;
     margin-right: 20px; /* Adjust this value based on your preference */
 }
 
