@@ -11149,12 +11149,6 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.projects-section .col-lg-4:hover .project-overlay {
-    opacity: 1; /* Original style */
-    /* Add any other styles you want to apply on hover */
-    transform: none; /* Reset any transformations applied on hover */
-}
-
 @media (min-width: 992px) {
     .projects-section .project-text {
         padding: 5rem;
