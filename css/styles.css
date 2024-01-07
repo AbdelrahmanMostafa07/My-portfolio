@@ -11119,15 +11119,15 @@ body {
   margin-bottom: 2rem;
 }
 .projects-section {
-    padding: 10rem 0;
+    padding: 0rem 0;
 }
 
 .projects-section .col-lg-4 {
-    padding: 1rem;
+    padding: 0rem;
 }
 
 .projects-section .project-img {
-    width: 110%;
+    width: 120%;
     max-height: 300px;
     object-fit: cover;
     border-radius: 0; /* Remove border-radius for squared edges */
