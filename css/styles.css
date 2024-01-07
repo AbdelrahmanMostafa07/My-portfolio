@@ -11161,6 +11161,14 @@ body {
     }
 }
 
+/* For larger screens, create space between projects using margins */
+@media (min-width: 992px) {
+    .projects-section .col-lg-4 {
+        width: calc(33.3333% - 20px); /* 3 columns with 20px margin in between */
+        margin-right: 20px;
+        margin-bottom: 20px; /* Adjust this value based on your preference */
+    }
+
 .signup-section {
   padding: 10rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/pexels.jpg");
