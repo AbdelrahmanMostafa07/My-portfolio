@@ -11188,7 +11188,7 @@ body {
 
 .project-img {
     width: 100%; /* Set the width to 100% to ensure the image covers the entire container */
-    height: 200px; /* Set a fixed height for consistent sizing */
+    height: 350px; /* Set a fixed height for consistent sizing */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
 
