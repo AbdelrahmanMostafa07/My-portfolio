@@ -11184,6 +11184,14 @@ body {
     color: #fff; /* Set text color */
 }
 
+/* Add this CSS to your existing styles or in a new styles.css file */
+
+.project-img {
+    width: 100%; /* Set the width to 100% to ensure the image covers the entire container */
+    height: 200px; /* Set a fixed height for consistent sizing */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
 .signup-section {
   padding: 10rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/pexels.jpg");
