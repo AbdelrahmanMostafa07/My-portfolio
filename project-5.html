@@ -110,93 +110,79 @@
                     <img src="project5-imgs/SQL4.png" alt="Project Image 4" style="max-width: none; width: 100%; height: auto;">
                 </div>
             </div>
+            <br>
+            <br>
             <section>
-                <!-- Project Description: -->
+                <!-- Business Request -->
                 <div class="project-section">
-                    <h3><strong>Project Description: </strong></h3>
+                    <h3><strong>Business Request: </strong></h3>
                     <br>
-                    <p>The Consumer Behavior and Shopping Habits Analysis project provides a comprehensive exploration of consumer preferences and purchasing behaviors.
-                        This initiative seeks to uncover patterns within a diverse dataset, offering valuable insights for businesses aiming to understand and adapt to
-                        the ever-evolving landscape of consumer decision-making. Through a meticulous analysis of demographic information, purchase history,
-                        and product preferences, the project aims to empower businesses to refine their strategies, optimize product offerings,
-                        and elevate the overall shopping experience for their customers.</p>
+                    <p>The business request for this Sales Project was an executive sales report for sales managers, 
+                        Based on the request that was made from the business we following user stories were defined to fulfill 
+                        delivery and ensure that acceptance criteria’s were maintained throughout the project</p>
+                    <br>
+                    <h4>Sales Manager Dashboard Overview:</h4>
+                    <p>Objective: Obtain a dashboard overview of internet sales to track top-performing customers and products.</p>
+                    <br>
+                    <h4>Sales Representative Customer Overview:</h4>
+                    <p>Objective: Access a detailed Internet Sales overview per customer for effective follow-ups and identifying sales opportunities.</p>
+                    <br>
+                    <h4>Sales Representative Product Overview:</h4>
+                    <p>Objective: Access detailed Internet Sales information per product to monitor top-performing products.</p>
+                    <br>
+                    <h4>Sales Manager Sales Overview Against Budget:</h4>
+                    <p>Objective: Obtain a dashboard overview of internet sales to track sales over time against the budget.</p>
+                    <br>
+                    <br>
                 </div>
                 <br>
                 <br>
-                <!-- Key Steps: -->
+                <!-- Data Cleansing & Transformation (SQL) -->
                 <div class="project-section">
                     <!-- Key Steps -->
-                    <h3><strong>Project Steps: </strong></h3>
+                    <h3><strong>Data Cleaning & Transformation (SQL)</strong></h3>
                     <br>
-                    <h4>1- Data Exploration:</h4>
-                    <p>Looked Through The Dataset to Ensure Data Quality and Understand Dataset Characteristics.</p>
-                    <p>Check if there's Missing Values, Duplicates, Outlier Detection And Data Type Validation</p>
+                    <p>To create the necessary data model for doing analysis and fulfilling the business needs defined in the user stories the following tables were extracted using SQL.</p>
+                    <p>One data source (sales budgets) were provided in Excel format and were connected in the data model in a later step of the process.</p>
+                    <p>Below are the SQL statements for cleansing and transforming necessary data.</p>
                     <br>
-                    <br>
-                    <h4>2- Data Cleaning and Preprocessing: </h4>
-                    <p>To ensure the reliability of the analysis, thorough data cleaning and preprocessing steps were implemented. This involved addressing missing values,
-                        handling outliers, and standardizing the dataset. The meticulous preparation of the data set the foundation for robust and meaningful insights.</p>
-                    <img src="project4-imgs/cleaning.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
+                    <h4><strong>DIM_Calendar:</strong></h4>
+                    <img src="project5-imgs/SQL1.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
                     <br>
                     <br>
+                    <h4><strong>DIM_Customers:</strong></h4>
+                    <img src="project5-imgs/SQL2.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
                     <br>
                     <br>
-                    <h4>3- Data Analysis: </h4>
-                    <p>The analysis revealed compelling results and answered the following business questions: </p>
-                    <p><strong>Question 1: </strong> Are there certain age groups that contribute more to total purchases in specific seasons?</p>
-                    <p><strong>Answer: </strong> Yes, our analysis revealed that middle age brackets contribute significantly to total purchases, especially during specific seasons.</p>
-                    <img src="project4-imgs/Q1.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
+                    <h4><strong>DIM_Products:</strong></h4>
+                    <img src="project5-imgs/SQL3.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
                     <br>
                     <br>
-                    <br>
-                    <br>
-                    <p><strong>Question 2: </strong> Can you identify any significant differences in purchase frequency between age groups?</p>
-                    <p><strong>Answer: </strong> The analysis highlighted that the middle age group consistently contributes the most to purchase frequency, with the older age group following closely.</p>
-                    <img src="project4-imgs/Q2.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
+                    <h4><strong>FACT_InternetSales:</strong></h4>
+                    <img src="project5-imgs/SQL4.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
                     <br>
                     <br>
                     <br>
                     <br>
-                    <p><strong>Question 3: </strong> Are there specific gender categories that contribute more to the total purchase amount?</p>
-                    <p><strong>Answer: </strong> Yes, our findings indicate that males are the primary contributors to the total purchase amount across various product categories.</p>
-                    <img src="project4-imgs/Q3.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
+                    <h3><strong>Data Model </strong></h3>
+                    <img src="project5-imgs/2.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
                     <br>
                     <br>
                     <br>
                     <br>
-                    <p><strong>Question 4: </strong>Are there categories that exhibit consistent spending patterns across all seasons?</p>
-                    <p><strong>Answer: </strong> Indeed, Clothing and Accessories emerged as our most consistently sold categories, demonstrating a stable spending pattern throughout the year.</p>
-                    <img src="project4-imgs/Q4.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
+                    <h3><strong>Sales Management Dashboard </strong></h3>
+                    <p>The finished sales management dashboard with one page with works as a dashboard and overview, with two other pages focused on combining tables for necessary details and visualizations to show sales over time, per customers and per products.</p>
                     <br>
                     <br>
                     <br>
+                    <h4><strong>Click the picture to to open the dashboard and try it out!</strong></h4>
                     <br>
-                    <p><strong>Question 5: </strong> Do customers in different regions show preferences for purchasing specific categories?</p>
-                    <p><stong>Answer: </stong> Yes, our analysis revealed that California, Illinois, Louisiana, Mississippi, and Montana significantly influence purchases, particularly in the Clothing category.</p>
-                    <img src="project4-imgs/Q5.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h3><strong>Insights and Strategies: </strong></h3>
-                    <img src="project4-imgs/data-insights-patimes.jpg" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
-                    <br>
-                    <br>
-                    <h4><strong>Targeted Marketing: </strong></h4>
-                    <p>Tailor marketing strategies to align with the purchasing preferences of middle-aged customers, who demonstrate both high contribution and frequency of purchases.</p>
-                    <br>
-                    <h4><strong>Product Focus: </strong></h4>
-                    <p>Given that Clothing and Accessories consistently perform well, consider optimizing inventory and promotional efforts for these categories.</p>
-                    <br>
-                    <h4><strong>Gender-Centric Marketing: </strong></h4>
-                    <p>Recognize the purchasing power of male customers and design marketing campaigns that resonate with their preferences.</p>
-                    <br>
-                    <h4><strong>Regional Customization: </strong></h4>
-                    <p>Leverage insights from regional preferences to customize marketing approaches for specific areas, potentially expanding the impact of your campaigns.</p>
+                    <a href="رابط-الموقع-الجديد" target="_blank">
+                        <img src="project5-imgs/1.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
+                    </a>
                     <br>
                     <br>
                     <br>
-                    
                     <h3><strong>Technical Details: </strong></h3>
                     <p>The analysis was meticulously executed using <strong>Microsoft Excel</strong>, demonstrating the versatility and effectiveness of this widely-used 
                         spreadsheet software. Throughout the project, Excel's functionalities, including data manipulation, visualization, 
