@@ -2,109 +2,175 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Project Name 2</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Abdelrahman Mostafa - Data Analyst</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
-    <!-- Additional styles for the navbar -->
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" integrity="sha384-1Zl16K5otbXXjF4++j4p62Kb8sC4aI12axV1Un2F5ia6YzBTSZboM9p2vpIA+rTR" crossorigin="anonymous">
+
+    <!-- Google fonts - Varela Round for headings, Nunito for body text -->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round|Nunito&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
     <style>
         body {
-            padding-top: 56px; /* Adjust this value based on your navbar height */
-        }
-        
-        .navbar-light .navbar-nav .nav-link {
-            color: #000 !important; /* Navbar link text color */
+            font-family: 'Nunito', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
         }
 
-        .navbar-light .navbar-toggler-icon {
-            background-color: #000; /* Navbar toggler color */
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
 
         .navbar-brand {
-            color: #000 !important; /* Navbar brand text color */
+            font-family: 'Varela Round', sans-serif;
+            font-size: 1.5rem;
+            color: #333 !important;
         }
-        
-        #mainNav {
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Navbar box shadow */
+
+        .navbar-toggler {
+            border-color: #333;
+        }
+
+        .nav-link {
+            color: #333 !important;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #007bff !important;
+        }
+
+        .projects-section {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .project-section {
+            margin-bottom: 40px;
+        }
+
+        .project-section h3 {
+            font-family: 'Varela Round', sans-serif;
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .project-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .project-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
 
         .footer {
-            background-color: #000 !important; /* Footer background color */
+            background-color: #333;
+            color: #fff;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .footer a {
+            color: #fff !important;
+            font-weight: 500;
+        }
+
+        .footer a:hover {
+            color: #007bff !important;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .projects-section {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+
+            .project-section h3 {
+                font-size: 1.8rem;
+            }
+
+            .project-section p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 
 <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container px-4 px-lg-5">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
             <a class="navbar-brand" href="#page-top">Abdelrahman Mostafa</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="https://abdelrahmanmostafa07.github.io/My-portfolio/#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://abdelrahmanmostafa07.github.io/My-portfolio/#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://abdelrahmanmostafa07.github.io/My-portfolio/#signup">Contact</a></li>
-                    <!-- Add more navigation links as needed -->
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Project Content -->
-    <section class="projects-section bg-light" id="projects">
-        <div class="container px-4 px-lg-5">
+    <section class="projects-section" id="projects">
+        <div class="container">
             <!-- Project Title -->
-            <div class="container px-4 px-lg-5 text-center my-5">
-                <h1>Data Cleaning and Analysis in Cricket Statistics</h1>
+            <div class="text-center mb-5">
+                <h2 class="section-heading">Data Cleaning and Analysis in Cricket Statistics</h2>
+                <hr class="divider my-4">
             </div>
 
             <!-- Project Description -->
             <div class="project-section">
                 <h3>Project Description</h3>
-                <p>In this project, I tackled the intricacies of cleaning and analyzing a dataset containing cricket player statistics sourced from <a href="https://www.espncricinfo.com/records/highest-career-batting-average-282910" target="_blank">ESPNcricinfo</a>.</p>
-                <p>The primary goal was to enhance the dataset's quality for more accurate insights into cricket players' performance.</p>
+                <p>In this project, I tackled the intricacies of cleaning and analyzing a dataset containing cricket player statistics sourced from <a href="https://www.espncricinfo.com/records/highest-career-batting-average-282910" target="_blank">ESPNcricinfo</a>. The primary goal was to enhance the dataset's quality for more accurate insights into cricket players' performance.</p>
             </div>
 
             <!-- Code Organization -->
             <div class="project-section">
                 <h3>Code Organization</h3>
                 <p>The code is organized using Python and pandas for efficient data manipulation, with detailed comments explaining each step.</p>
-                <img src="project1-pics/2.png" alt="Project Image 2" style="max-width: 100%; height: auto;">
+                <img src="project1-pics/2.png" alt="Project Image 2">
             </div>
 
             <!-- Additional Details -->
             <div class="project-section">
                 <h3>Additional Details</h3>
                 <p>The dataset presented challenges like missing values and inconsistent formats, which I methodically addressed.</p>
-                <img src="project1-pics/3.png" alt="Project Image 3" style="max-width: 100%; height: auto;">
+                <img src="project1-pics/3.png" alt="Project Image 3">
             </div>
 
             <!-- Displaying Results -->
             <div class="project-section">
                 <h3>Displaying Results</h3>
                 <p>The analysis focused on cricket player statistics, using advanced statistical calculations to derive meaningful insights.</p>
-                <ul>
-                    <li><strong>Q1:</strong> Calculated the average career length of players.</li>
-                    <li><strong>Q2:</strong> Determined the average batting strike rate for cricketers with over 10 years of play.</li>
-                    <li><strong>Q3:</strong> Found the number of cricketers who played before 1960.</li>
-                    <li><strong>Q4:</strong> Identified the maximum highest innings score by country.</li>
-                    <li><strong>Q5:</strong> Computed the average points scored by players for each country.</li>
-                </ul>
-                <img src="project1-pics/4.png" alt="Project Image 4" style="max-width: 100%; height: auto;">
+                <img src="project1-pics/4.png" alt="Project Image 4">
             </div>
 
             <!-- Final Results -->
@@ -117,12 +183,16 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-black small text-center text-white-50">
-        <div class="container px-4 px-lg-5">
-            <!-- Copyright information goes here -->
+    <footer class="footer text-center">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <a class="btn btn-primary btn-lg" href="https://abdelrahmanmostafa07.github.io/My-portfolio/">Back to Home</a>
+                    <a class="btn btn-primary btn-lg" href="#page-top">Back to Top</a>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-12">
+                    <p>&copy; 2024 Abdelrahman Mostafa. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
@@ -130,10 +200,6 @@
 
     <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS -->
-    <script src="js/scripts.js"></script>
-    <!-- SB Forms JS -->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
 </html>
