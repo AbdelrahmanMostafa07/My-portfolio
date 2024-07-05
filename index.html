@@ -1,272 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Abdelrahman's Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Abdelrahman Mostafa</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
-                    </ul>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio showcasing Abdelrahman Mostafa's skills in data analysis and visualization for strategic decision-making.">
+    <meta name="author" content="Abdelrahman Mostafa">
+    <title>Abdelrahman Mostafa - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <style>
+        /* Custom CSS styles */
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .masthead {
+            background-color: #343a40;
+            color: #ffffff;
+            padding-top: 15rem;
+            padding-bottom: 15rem;
+            text-align: center;
+        }
+        .about-section {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 6rem 0;
+        }
+        .projects-section {
+            padding: 6rem 0;
+        }
+        .signup-section {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 6rem 0;
+        }
+        .contact-section {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 6rem 0;
+        }
+        .footer {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 2rem 0;
+        }
+        .navbar-brand {
+            font-family: 'Varela Round', sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #343a40;
+        }
+        .nav-link {
+            color: #343a40 !important;
+        }
+        .btn-primary {
+            background-color: #343a40;
+            border-color: #343a40;
+        }
+        .btn-primary:hover {
+            background-color: #1a1a1a;
+            border-color: #1a1a1a;
+        }
+        .btn-primary:focus {
+            box-shadow: none;
+        }
+        .project-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(52, 58, 64, 0.8);
+            color: #ffffff;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        .project-text {
+            text-align: center;
+        }
+        .social a {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+        .social a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Abdelrahman Mostafa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                </ul>
             </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Abdelrahman's Portfolio</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Leveraging data analysis and visualization for strategic decision-making.</h2>
-                        <a class="btn btn-primary" href="#about">About me</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Hello, I'm Abdelrahman Mostafa</h2>
-                        <p class="text-white-50">
-                           A dedicated Data Analyst skilled in analyzing data to deliver strategic insights that enhance operational performance 
-                           and achieve organizational objectives. Experienced in optimizing business operations by identifying efficiency opportunities while 
-                            maintaining cost-effectiveness. Proficient in data analysis, report development, and adept at communicating with cross-functional teams. 
-                            Recognized for identifying emerging trends and devising strategic solutions to drive business success.</p>
-                           <br>
-                           <br>
-                           <br>
-                           <br>
-                           <br>
-                           <br>
-                           <br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Projects -->
-        <section class="projects-section bg-light" id="projects">
-            <div class="container">
-                <!-- First Row of Projects -->
-                <div class="row justify-content-center">
-                    <!-- Project One -->
-                    <div class="col-lg-4 mb-4">
-                        <div class="project-card">
-                            <a href="project-5.html" target="_blank">
-                                <img class="project-img" src="project5-imgs/1.png" alt="Project 1" />
-                                <div class="project-overlay">
-                                    <div class="project-text text-white">
-                                        <h4>Sales Analysis And Reporting Project</h4>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-        
-                    <!-- Duplicate Project One -->
-                    <div class="col-lg-4 mb-4">
-                        <div class="project-card">
-                            <a href="project6.html" target="_blank">
-                                <img class="project-img" src="assets/img/projec6-img.png" alt="Project 1" />
-                                <div class="project-overlay">
-                                    <div class="project-text text-white">
-                                        <h4>Mobile Price Analysis And Classification</h4>
-                                        <p>The project delves into the world of mobile price analysis and classification.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-        
-                    <!-- Duplicate Project Two -->
-                    <div class="col-lg-4 mb-4">
-                        <div class="project-card">
-                            <a href="project3.html" target="_blank">
-                                <img class="project-img" src="project3-img/header.png" alt="Project 1" />
-                                <div class="project-overlay">
-                                    <div class="project-text text-white">
-                                        <h4>Bike Market Dynamics: Advanced Analytics for Informed Sales Strategies</h4>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Second Row of Projects -->
-                <div class="row justify-content-center">
-                    <!-- Project Two -->
-                    <div class="col-lg-4 mb-4">
-                        <div class="project-card">
-                            <a href="project4.html" target="_blank">
-                                <img class="project-img" src="assets/img/project4-img.png" alt="Project 2" />
-                                <div class="project-overlay">
-                                    <div class="project-text text-white">
-                                        <h4>Consumer Behavior and Shopping Habits</h4>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-        
-                    <!-- Duplicate Project Two -->
-                    <div class="col-lg-4 mb-4">
-                        <div class="project-card">
-                            <a href="project2.html" target="_blank">
-                                <img class="project-img" src="assets/img/Untitled.png" alt="Project 2" />
-                                <div class="project-overlay">
-                                    <div class="project-text text-white">
-                                        <h4>Student Performance Analysis - EDA Project</h4>
-                                        <p>A comprehensive exploration of the student dataset to uncovered meaningful relationships and trends.</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-        
-                    <!-- Duplicate Project Three -->
-                    <div class="col-lg-4 mb-4">
-                        <div class="project-card">
-                            <a href="project1.html" target="_blank">
-                                <img class="project-img" src="assets/img/1.png" alt="Project 2" />
-                                <div class="project-overlay">
-                                    <div class="project-text text-white">
-                                        <h4>Data Cleaning and Analysis in Cricket Statistics</h4>
-                                        <p>Meticulous data cleaning and analysis of cricket player statistics</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </nav>
 
+    <!-- Masthead -->
+    <header class="masthead text-center text-white">
+        <div class="masthead-content">
+            <div class="container px-5">
+                <h1 class="masthead-heading mb-0">Abdelrahman Mostafa's Portfolio</h1>
+                <p class="masthead-subheading mb-0">Leveraging data analysis and visualization for strategic decision-making</p>
+                <a class="btn btn-primary btn-lg mt-4" href="#about">About me</a>
+            </div>
+        </div>
+    </header>
 
-        <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                            </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3 mt-2 text-white">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    <!--To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>-->
+    <!-- About -->
+    <section class="about-section text-center py-5" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-4">Hello, I'm Abdelrahman Mostafa</h2>
+                    <p class="text-white-50">
+                        A dedicated Data Analyst skilled in analyzing data to deliver strategic insights that enhance operational performance and achieve organizational objectives. Experienced in optimizing business operations by identifying efficiency opportunities while maintaining cost-effectiveness. Proficient in data analysis, report development, and adept at communicating with cross-functional teams. Recognized for identifying emerging trends and devising strategic solutions to drive business success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects-section bg-light py-5" id="projects">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Project One -->
+                <div class="col-lg-4 mb-4">
+                    <div class="project-card">
+                        <a href="project-5.html" target="_blank">
+                            <img class="project-img" src="project5-imgs/1.png" alt="Project 1" />
+                            <div class="project-overlay">
+                                <div class="project-text">
+                                    <h4>Sales Analysis And Reporting Project</h4>
+                                    <p></p>
                                 </div>
                             </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                        </form>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Two -->
+                <div class="col-lg-4 mb-4">
+                    <div class="project-card">
+                        <a href="project6.html" target="_blank">
+                            <img class="project-img" src="assets/img/project6-img.png" alt="Project 2" />
+                            <div class="project-overlay">
+                                <div class="project-text">
+                                    <h4>Mobile Price Analysis And Classification</h4>
+                                    <p>The project delves into the world of mobile price analysis and classification.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Three -->
+                <div class="col-lg-4 mb-4">
+                    <div class="project-card">
+                        <a href="project3.html" target="_blank">
+                            <img class="project-img" src="project3-img/header.png" alt="Project 3" />
+                            <div class="project-overlay">
+                                <div class="project-text">
+                                    <h4>Bike Market Dynamics: Advanced Analytics for Informed Sales Strategies</h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Contact-->
-        <section class="contact-section bg-black">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">Al-Maadi, Cairo, Egypt</div>
+        </div>
+    </section>
+
+    <!-- Signup -->
+    <section class="signup-section text-center py-5" id="signup">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8">
+                    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                    <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                    <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <div class="row input-group-newsletter">
+                            <div class="col">
+                                <input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email">
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="#!">Abdomostafa3017@gmail.com</a></div>
+                        <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
+                        <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3 mt-2 text-white">
+                                <div class="fw-bolder">Form submission successful!</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">(+20) 01148639899</div>
-                            </div>
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3 mt-2">Error sending message!</div>
                         </div>
-                    </div>
-                </div>
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="https://www.facebook.com/profile.php?id=100067760687721!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="https://github.com/AbdelrahmanMostafa07!"><i class="fab fa-github"></i></a>
+                    </form>
                 </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Abdelrahman Mostafa 2024</div></footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section py-5" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100 text-center">
+                        <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Address</h4>
+                        <hr class="my-4 mx-auto">
+                        <div class="small text-black-50">Al-Maadi, Cairo, Egypt</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100 text-center">
+                        <i class="fas fa-envelope text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Email</h4>
+                        <hr class="my-4 mx-auto">
+                        <div class="small text-black-50"><a href="mailto:abdomostafa3017@gmail.com">abdomostafa3017@gmail.com</a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100 text-center">
+                        <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Phone</h4>
+                        <hr class="my-4 mx-auto">
+                        <div class="small text-black-50">(+20) 01148639899</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Social icons -->
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-6 text-center">
+                    <a class="mx-2" href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="https://www.facebook.com/profile.php?id=100067760687721" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="https://github.com/AbdelrahmanMostafa07" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container">
+            &copy; Abdelrahman Mostafa 2024
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS -->
+    <script src="js/scripts.js"></script>
+    <!-- SB Forms JS -->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
 </html>
