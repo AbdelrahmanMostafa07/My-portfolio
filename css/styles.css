@@ -11112,6 +11112,21 @@ body {
   }
 }
 
+@font-face {
+    font-family: 'Nexa';
+    src: url('fonts/nexa-bold.woff2') format('woff2'),
+         url('fonts/nexa-bold.woff') format('woff'); /* Add other formats if necessary */
+    font-weight: bold; /* Adjust font-weight as needed */
+    font-style: normal; /* Adjust font-style as needed */
+}
+
+/* Add @font-face rules for other Nexa variations if needed */
+
+/* Apply Nexa font to specific elements */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nexa', sans-serif;
+}
+
 .about-section {
   padding-top: 10rem;
   /*background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);*/
