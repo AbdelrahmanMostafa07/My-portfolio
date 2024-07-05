@@ -1,131 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Abdelrahman Mostafa - Data Analyst</title>
+    <meta name="description" content="Abdelrahman Mostafa's Portfolio">
+    <meta name="author" content="Abdelrahman Mostafa">
+    <title>Abdelrahman Mostafa - Data Analyst Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-
     <!-- Font Awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" integrity="sha384-1Zl16K5otbXXjF4++j4p62Kb8sC4aI12axV1Un2F5ia6YzBTSZboM9p2vpIA+rTR" crossorigin="anonymous">
-
-    <!-- Google fonts - Varela Round for headings, Nunito for body text -->
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round|Nunito&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap) -->
+    <link href="css/styles.css" rel="stylesheet">
     <style>
+        /* Add your additional styles here */
         body {
-            font-family: 'Nunito', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
+            padding-top: 56px;
         }
-
-        .navbar {
-            background-color: #fff;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-            padding-top: 20px;
-            padding-bottom: 20px;
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #000 !important;
         }
-
-        .navbar-brand {
-            font-family: 'Varela Round', sans-serif;
-            font-size: 1.5rem;
-            color: #333 !important;
+        .navbar-toggler-icon {
+            background-color: #000;
         }
-
-        .navbar-toggler {
-            border-color: #333;
+        #mainNav {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
-        .nav-link {
-            color: #333 !important;
-            font-weight: 500;
+        .footer {
+            background-color: #000;
+            color: #fff;
         }
-
-        .nav-link:hover {
-            color: #007bff !important;
-        }
-
-        .projects-section {
-            padding-top: 80px;
-            padding-bottom: 80px;
-        }
-
-        .project-section {
-            margin-bottom: 40px;
-        }
-
-        .project-section h3 {
-            font-family: 'Varela Round', sans-serif;
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .project-section p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
-
-        .project-section img {
+        .projects-section img {
             width: 100%;
             height: auto;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-
-        .footer {
-            background-color: #333;
-            color: #fff;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        .footer a {
-            color: #fff !important;
-            font-weight: 500;
-        }
-
-        .footer a:hover {
-            color: #007bff !important;
-        }
-
-        @media (max-width: 768px) {
-            .navbar {
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
-
-            .projects-section {
-                padding-top: 60px;
-                padding-bottom: 60px;
-            }
-
-            .project-section h3 {
-                font-size: 1.8rem;
-            }
-
-            .project-section p {
-                font-size: 1rem;
-            }
+            max-width: none;
         }
     </style>
 </head>
-
 <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="#page-top">Abdelrahman Mostafa</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
@@ -138,61 +60,57 @@
     </nav>
 
     <!-- Project Content -->
-    <section class="projects-section" id="projects">
-        <div class="container">
-            <!-- Project Title -->
-            <div class="text-center mb-5">
-                <h2 class="section-heading">Data Cleaning and Analysis in Cricket Statistics</h2>
-                <hr class="divider my-4">
+    <section class="projects-section bg-light" id="projects">
+        <div class="container px-4 px-lg-5">
+            <div class="container px-4 px-lg-5 text-center my-5">
+                <h1>Data Cleaning and Analysis in Cricket Statistics</h1>
             </div>
+            <img src="project1-pics/1.png" alt="Project Image">
+            <section>
+                <!-- Project Description -->
+                <div class="project-section">
+                    <h3>Project Description:</h3>
+                    <p>In this project, I tackled the intricacies of cleaning and analyzing a dataset containing cricket player statistics sourced from <a
+                            href="https://www.espncricinfo.com/records/highest-career-batting-average-282910" target="_blank">ESPNcricinfo</a>. The dataset required extensive cleaning to prepare it for meaningful analysis. The primary goal was to enhance the dataset's quality, enabling more accurate insights into the performance of cricket players.</p>
+                </div>
 
-            <!-- Project Description -->
-            <div class="project-section">
-                <h3>Project Description</h3>
-                <p>In this project, I tackled the intricacies of cleaning and analyzing a dataset containing cricket player statistics sourced from <a href="https://www.espncricinfo.com/records/highest-career-batting-average-282910" target="_blank">ESPNcricinfo</a>. The primary goal was to enhance the dataset's quality for more accurate insights into cricket players' performance.</p>
-            </div>
-
-            <!-- Code Organization -->
-            <div class="project-section">
-                <h3>Code Organization</h3>
-                <p>The code is organized using Python and pandas for efficient data manipulation, with detailed comments explaining each step.</p>
-                <img src="project1-pics/2.png" alt="Project Image 2">
-            </div>
-
-            <!-- Additional Details -->
-            <div class="project-section">
-                <h3>Additional Details</h3>
-                <p>The dataset presented challenges like missing values and inconsistent formats, which I methodically addressed.</p>
-                <img src="project1-pics/3.png" alt="Project Image 3">
-            </div>
-
-            <!-- Displaying Results -->
-            <div class="project-section">
-                <h3>Displaying Results</h3>
-                <p>The analysis focused on cricket player statistics, using advanced statistical calculations to derive meaningful insights.</p>
-                <img src="project1-pics/4.png" alt="Project Image 4">
-            </div>
-
-            <!-- Final Results -->
-            <div class="project-section">
-                <h3>Final Results</h3>
-                <p>After meticulous analysis, the focus was on achieving clean and error-free data for reliable insights into cricket player performances.</p>
-                <p>For a detailed review of the codebase, visit the project's GitHub repository: <a href="https://github.com/AbdelrahmanMostafa07/Projects/blob/1d80671fb90270daf011c027eade580501207ca1/Data%20Cleaning%20Project.ipynb" target="_blank">View Code on GitHub</a></p>
-            </div>
+                <!-- Code Organization -->
+                <div class="project-section">
+                    <h3>Code Organization:</h3>
+                    <p>The code is organized logically, leveraging Python and the pandas library for efficient data manipulation. Each step is accompanied by comments explaining the rationale behind the decisions made during the cleaning process. For instance, I utilized the fillna method to handle missing values in critical columns such as 'Balls_Faced' and 'Strike_Rate'.</p>
+                    <img src="project1-pics/2.png" alt="Code Screenshot">
+                    <!-- Additional Details -->
+                    <h4>Additional Details</h4>
+                    <p>The dataset presented challenges, such as missing values and inconsistent formats, which I addressed methodically. I opted for a careful approach, verifying data uniqueness after splitting the 'Span' column into 'Rookie-Year' and 'Final-Year' to ensure accurate analysis.</p>
+                    <img src="project1-pics/3.png" alt="Additional Details Image">
+                    <!-- Displaying Results -->
+                    <h4>Displaying Results:</h4>
+                    <p>The analysis delved into cricket player statistics, utilizing advanced statistical calculations to derive meaningful insights. Through careful examination and manipulation of the dataset, key questions were addressed:</p>
+                    <ul>
+                        <li><strong>Q1:</strong> Calculated the average career length of players.</li>
+                        <li><strong>Q2:</strong> Determined the average batting strike rate for cricketers with over 10 years of play.</li>
+                        <li><strong>Q3:</strong> Found the number of cricketers who played before 1960.</li>
+                        <li><strong>Q4:</strong> Identified the maximum highest innings score by country.</li>
+                        <li><strong>Q5:</strong> Computed the average number of points scored by players for each country, considering hundreds, fifties, and ducks (0).</li>
+                    </ul>
+                    <img src="project1-pics/4.png" alt="Results Screenshot">
+                    <!-- Final Results -->
+                    <h4>Final Results:</h4>
+                    <p>After meticulous analysis of players' career length and batting strike rates over a decade, the focus was on achieving clean and error-free data. The mean career length and average strike rates for players with over 10 years of experience were calculated, contributing to the final results. The culmination of the project involved thorough data cleaning, ensuring the dataset's integrity by addressing issues and errors. The refined data now stands as a reliable foundation for drawing meaningful conclusions and insights into cricket players' performances.</p>
+                    <p>For a detailed review of the entire codebase, please visit the project's GitHub repository. <a href="https://github.com/AbdelrahmanMostafa07/Projects/blob/1d80671fb90270daf011c027eade580501207ca1/Data%20Cleaning%20Project.ipynb"
+                            target="_blank">View Code on GitHub</a></p>
+                </div>
+            </section>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
-        <div class="container">
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container px-4 px-lg-5">
             <div class="row">
                 <div class="col-lg-12">
-                    <a class="btn btn-primary btn-lg" href="#page-top">Back to Top</a>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-lg-12">
-                    <p>&copy; 2024 Abdelrahman Mostafa. All Rights Reserved.</p>
+                    <p>&copy; 2024 Abdelrahman Mostafa. All rights reserved.</p>
+                    <a class="btn btn-primary btn-lg" href="https://abdelrahmanmostafa07.github.io/My-portfolio/">Back to Home</a>
                 </div>
             </div>
         </div>
@@ -200,6 +118,9 @@
 
     <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS -->
+    <script src="js/scripts.js"></script>
+    <!-- SB Forms JS -->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
-
 </html>
