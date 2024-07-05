@@ -4,175 +4,206 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Project Name 2</title>
+    <meta name="description" content="Portfolio of Abdelrahman Mostafa, showcasing data analysis projects." />
+    <meta name="author" content="Abdelrahman Mostafa" />
+    <title>Bike Market Analysis</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-
-    <!-- Additional styles for the navbar -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Core theme CSS -->
     <style>
         body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f8f9fa; /* Light gray background */
             padding-top: 56px; /* Adjust this value based on your navbar height */
-        }
-        
-        /* قاعدة تغيير لون النص عند التحوّل */
-        .navbar-light .navbar-nav .nav-link {
-            color: #000 !important; /* لون النص الذي يظهر على الخلفية البيضاء */
+            line-height: 1.6;
         }
 
-        /* قاعدة تغيير لون النص عند التحوّل */
-        .navbar-light .navbar-toggler-icon {
-            background-color: #000; /* لون النص الذي يظهر على الخلفية البيضاء */
+        .navbar {
+            background-color: #ffffff; /* White navbar background */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
         }
 
         .navbar-brand {
-            color: #000 !important; /* لون النص */
-        }
-        
-        #mainNav {
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* يمكنك تعديل القيم وفقًا لتفضيلاتك */
+            color: #000000; /* Black navbar text */
+            font-weight: bold;
+            font-size: 1.5rem; /* Larger font size */
         }
 
-        /* إزالة علامة النشاط بالشريط عند التمرير */
-        .navbar-nav .nav-link.active::after {
-            display: none;
+        .navbar-toggler-icon {
+            background-color: #000000; /* Black color for toggler icon */
+        }
+
+        .navbar-nav .nav-link {
+            color: #000000; /* Black navbar link text */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff; /* Blue color on hover */
+        }
+
+        .projects-section {
+            background-color: #ffffff; /* White background for project sections */
+            padding: 60px 0; /* Vertical padding */
+        }
+
+        .project-section {
+            margin-bottom: 40px; /* Space between project sections */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow for sections */
+            background-color: #ffffff; /* White background */
+        }
+
+        .project-section p {
+            color: #6c757d; /* Gray text color for paragraphs */
+        }
+
+        .project-section img {
+            margin-top: 20px; /* Space above project images */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow for images */
+            border-radius: 8px;
         }
 
         .footer {
-            background-color: #fff !important; /* يقوم بتحديد لون الخلفية للشريط السفلي */
+            background-color: #343a40; /* Dark background for footer */
+            color: #ffffff; /* White text color */
+            padding: 30px 0; /* Vertical padding */
         }
 
-        /* إزالة علامة النشاط بالشريط عند التمرير */
-        .projects-section #mainNav .navbar-nav .nav-link.active::after {
-            display: none;
+        .footer a.btn-primary:hover,
+        .footer a.btn-primary:focus {
+            background-color: #ffffff; /* Change background color on hover and focus */
+            color: #343a40; /* Dark text color on hover and focus */
+            border-color: #ffffff; /* Change border color on hover and focus */
         }
 
-        /* Increase font size for the entire Project Content section */
-        .projects-section:not(:has(h1)) {
-            font-size: 20px; /* You can adjust this value to your preference */
+        .footer p {
+            margin-bottom: 0; /* Remove margin bottom for paragraphs in footer */
         }
- 
     </style>
 </head>
 
 <body id="page-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container px-4 px-lg-5">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
             <a class="navbar-brand" href="#page-top">Abdelrahman Mostafa</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> Menu
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="https://abdelrahmanmostafa07.github.io/My-portfolio/#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://abdelrahmanmostafa07.github.io/My-portfolio/#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://abdelrahmanmostafa07.github.io/My-portfolio/#signup">Contact</a></li>
-                    <!-- Add more navigation links as needed -->
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
     <!-- Project Content -->
-    <section class="projects-section bg-light" id="projects">
-        <div class="container px-4 px-lg-5">
+    <section class="projects-section" id="projects">
+        <div class="container">
             <!-- Featured Project Row -->
-            <!-- Project Title -->
-            <div class="container px-4 px-lg-5 text-center my-5">
-                <h1>Data Cleaning and Analysis in Cricket Statistics</h1>
-            </div>
-                <img src="project1-pics/1.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
-            <section>
-                <br>
-                <br>
-                <!-- Project Description -->
-                <div class="project-section">
-                    <h3>Project Description: </h3>
-                    <br>
-                    <p>In this project, I tackled the intricacies of cleaning and analyzing a dataset containing cricket player statistics. The dataset, sourced from <a href="https://www.espncricinfo.com/records/highest-career-batting-average-282910" target="_blank">ESPNcricinfo</a></p>
-                    <p>required extensive cleaning to prepare it for meaningful analysis. The primary goal was to enhance the dataset's quality, enabling more accurate insights into the performance of cricket players.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="mt-0">Bike Market Dynamics: Advanced Analytics for Informed Sales Strategies</h1>
+                    <hr class="divider" />
                 </div>
-                <br>
-                <!-- Code Organization -->
-                <div class="project-section">
-                    <h3>Code Organization: </h3>
-                    <br>
-                    <p>The code is organized logically, leveraging Python and the pandas library for efficient data manipulation. 
-                    Each step is accompanied by comments explaining the rationale behind the decisions made during the cleaning process. 
-                    For instance, I utilized the fillna method to handle missing values in critical columns such as 'Balls_Faced' and 'Strike_Rate.'</p>
-                    <br>
-                    <img src="project1-pics/2.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <!-- Additional Details -->
-                    <h4>Additional Details</h4>
-                    <p>The dataset presented challenges, such as missing values and inconsistent formats, which I addressed methodically. 
-                    I opted for a careful approach, verifying data uniqueness after splitting the 'Span' column into 'Rookie-Year' and 'Final-Year' to ensure accurate analysis.</p>
-                    <br>
-                    <img src="project1-pics/3.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <!-- Displaying Results -->
-                    <h4>Displaying Results: </h4>
-                    <br>
-                    <p>The analysis delved into cricket player statistics, utilizing advanced statistical calculations to derive meaningful insights. Through careful examination and manipulation of the dataset, key questions were addressed:</p>
-                    <br>
-                    <ul>
-                        <li><strong>Q1:</strong> Calculated the average career length of players.</li>
-                        <li><strong>Q2:</strong> Determined the average batting strike rate for cricketers with over 10 years of play.</li>
-                        <li><strong>Q3:</strong> Found the number of cricketers who played before 1960.</li>
-                        <li><strong>Q4:</strong> Identified the maximum highest innings score by country.</li>
-                        <li><strong>Q5:</strong> Computed the average number of points scored by players for each country, considering hundreds, fifties, and ducks (0).</li>
-                    </ul>
-                    <br>
-                    <p>The results, derived solely from data analysis and without the use of visual aids, 
-                    contribute to a comprehensive understanding of cricket player performances and historical trends.</p>
-                    <img src="project1-pics/4.png" alt="Project Image Below Paragraphs" style="max-width: none; width: 100%; height: auto;">
-                    <br>
-                    <br>
-                    <br>
-                    <!-- Final Results -->
-                    <h4>Final Results: </h4>
-                    <p>After a meticulous analysis of players' career length and batting strike rates over a decade, the focus was on achieving clean and error-free data. 
-                    The mean career length and average strike rates for players with over 10 years of experience were calculated, contributing to the final results.</p>                    
-                    <p>The culmination of the project involved thorough data cleaning, ensuring the dataset's integrity by addressing issues and errors. 
-                    The refined data now stands as a reliable foundation for drawing meaningful conclusions and insights into cricket players' performances.</p>
-                    <br>
-                    <p>For a detailed review of the entire codebase, please visit the project's GitHub repository. <a href="https://github.com/AbdelrahmanMostafa07/Projects/blob/1d80671fb90270daf011c027eade580501207ca1/Data%20Cleaning%20Project.ipynb" target="_blank">View Code on GitHub</a></p>   
+            </div>
 
-                </div>                
-            </section>
+            <!-- Project Description -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="project-section">
+                        <h3>Project Description:</h3>
+                        <p>The analysis of bike sales data reveals key insights into market dynamics, with a focus on regional sales, gender-based income differences, age demographics, education patterns, and occupation preferences. The project aims to answer strategic business questions, providing valuable insights for informed decision-making and future planning.</p>
+                    </div>
+
+                    <!-- Key Steps -->
+                    <div class="project-section">
+                        <h3>Key Steps:</h3>
+                        <h4>Data Exploration:</h4>
+                        <p>The analytical process began with familiarizing myself with the structure and variables of the dataset comprehensively through data exploration. The general structure of the data and the relationships between variables were analyzed in detail to understand how the data is built and the associations between variables.</p>
+                        <img src="project3-img/exploration.jpeg" alt="Data Exploration" class="img-fluid">
+                        
+                        <h4>Data Cleaning:</h4>
+                        <p>Dealing with missing values using statistical methods such as mean imputation for numeric data and mode imputation for categorical data was crucial to ensure accurate analysis.</p>
+                        <img src="project3-img/missing.png" alt="Data Cleaning" class="img-fluid">
+                        
+                        <h4>Data Transformation:</h4>
+                        <p>Transforming the 'Income' column into a currency data type to facilitate financial analysis and visualization.</p>
+                        <img src="project3-img/before-after.png" alt="Data Transformation" class="img-fluid">
+                        
+                        <h4>Categorization and Labeling:</h4>
+                        <p>Categorized variables such as age brackets and education levels for clearer analysis and interpretation, introducing labels like "Middle Age 31-54" and "Old 55+" for better segmentation.</p>
+                        <img src="project3-img/1.png" alt="Categorization and Labeling" class="img-fluid">
+                        
+                        <h4>Formulation of Data Analysis Questions:</h4>
+                        <p>Developed focused questions aimed at extracting meaningful insights from the dataset, covering key aspects like regional sales, gender-based income differences, age demographics, education patterns, and occupation preferences.</p>
+                        <img src="project3-img/Q1.png" alt="Data Analysis Questions" class="img-fluid">
+                    </div>
+
+                    <!-- Technical Details -->
+                    <div class="project-section">
+                        <h3>Technical Details:</h3>
+                        <h4>Microsoft Excel:</h4>
+                        <p>The analysis was meticulously executed using Microsoft Excel for data cleaning, analysis, and dashboard design.</p>
+                    </div>
+
+                    <!-- Data Visualization -->
+                    <div class="project-section">
+                        <h4>Data Visualization Development:</h4>
+                        <p>Designed a dashboard overview with a variety of charts and graphs, including bar charts for regional sales, pie charts for gender distribution, and line graphs for age demographics. These visualizations served as a powerful means to convey key findings.</p>
+                        <img src="project3-img/dashboard.png" alt="Data Visualization" class="img-fluid">
+                    </div>
+
+                    <!-- Insights Extraction -->
+                    <div class="project-section">
+                        <h3>Insights Extraction:</h3>
+                        <p>Extracted insights from the data, identifying patterns, trends, and correlations that directly addressed the formulated questions.</p>
+                        <h5>Informed Regional Strategies:</h5>
+                        <p>The identification of North America's dominance in sales guided strategic decision-making for regional expansions.</p>
+                        <h5>Targeted Age Group Marketing:</h5>
+                        <p>Focused marketing efforts on middle age brackets based on their significant contribution to sales.</p>
+                        <h5>Strategic Occupation-Based Offerings:</h5>
+                        <p>Developed tailored product offerings for professionals, considering their higher purchasing power.</p>
+                        <h5>Gender-Neutral Marketing:</h5>
+                        <p>Implemented inclusive marketing strategies that resonate with both genders.</p>
+                    </div>
+
+                    <!-- Recommendations -->
+                    <div class="project-section">
+                        <h3>Recommendations for Future Actions or Improvements:</h3>
+                        <p>Outlined actionable recommendations based on insights, such as expanding regional strategies, deeper understanding of middle age demographics, and continuous monitoring of market trends.</p>
+                        <img src="project3-img/recommendation.jpg" alt="Recommendations" class="img-fluid">
+                    </div>
+
+                    <!-- Conclusion -->
+                    <div class="project-section">
+                        <h3>Conclusion:</h3>
+                        <p>Concluded with a summary of key insights and their implications for strategic decision-making in sales and marketing.</p>
+                        <p>For a detailed review of the entire dashboard and dataset, please visit the project's repository. <a href="https://github.com/AbdelrahmanMostafa07/Projects/blob/fcab9bce30bcee52ca255d2074923e9908ac88f0/Students%20Project.ipynb" target="_blank">View Code on GitHub</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer bg-black small text-center text-white-50">
-        <div class="container px-4 px-lg-5">
-            <!-- Copyright information goes here -->
-    
-            <!-- Back to Home button -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <a class="btn btn-primary btn-lg" href="https://abdelrahmanmostafa07.github.io/My-portfolio/">Back to Home</a>
-                </div>
-            </div>
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 Abdelrahman Mostafa. All rights reserved.</p>
+            <a class="btn btn-primary btn-lg" href="https://abdelrahmanmostafa07.github.io/My-portfolio/">Back to Home</a>
         </div>
     </footer>
-
 
     <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
