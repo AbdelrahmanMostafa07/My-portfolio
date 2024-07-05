@@ -11115,19 +11115,16 @@ body {
   }
 }
 
+/* Import your custom font */
 @font-face {
-    font-family: 'Nexa';
-    src: url('fonts/nexa-bold.woff2') format('woff2'),
-         url('fonts/nexa-bold.woff') format('woff'); /* Add other formats if necessary */
-    font-weight: bold; /* Adjust font-weight as needed */
-    font-style: normal; /* Adjust font-style as needed */
+    font-family: 'NexaBold';
+    src: url('css/NexaBold.otf') format('opentype');
+    /* Add additional src declarations for other formats like woff if needed */
 }
 
-/* Add @font-face rules for other Nexa variations if needed */
-
-/* Apply Nexa font to specific elements */
+/* Apply your custom font to specific elements */
 body, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Nexa', sans-serif;
+    font-family: 'NexaBold', sans-serif;
 }
 
 .about-section {
