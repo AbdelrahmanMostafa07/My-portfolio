@@ -11129,7 +11129,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .about-section {
   padding-top: 10rem;
-  background-color: #4C80FF; /* Blue background */
+  background-color: #4C80FF; /* Solid black background */
   text-align: center; /* Center align the content horizontally */
   color: white; /* Text color */
 }
@@ -11137,7 +11137,6 @@ body, h1, h2, h3, h4, h5, h6 {
 .about-section p {
   margin-bottom: 2rem; /* Bottom margin between paragraphs */
   text-align: left; /* Align text left */
-  color: white; /* Ensure paragraph text is white */
 }
 
 .about-section h2 {
@@ -11145,15 +11144,6 @@ body, h1, h2, h3, h4, h5, h6 {
   font-size: 2rem; /* Adjust font size as needed */
   text-align: center; /* Center the text */
   margin-bottom: 4rem; /* Adjust margin as needed */
-}
-
-.centered-title {
-    font-size: 2rem; /* Increase font size as needed */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh; /* Full viewport height to center vertically */
 }
 
 .projects-section {
