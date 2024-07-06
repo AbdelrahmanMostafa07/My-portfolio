@@ -11132,10 +11132,12 @@ body, h1, h2, h3, h4, h5, h6 {
 } */
 
 .about-section {
+  display: block;
+  visibility: visible;
   padding-top: 10rem;
-  background-color: #000000; /* Solid black background */
+  background-color: #FFFFFF; /* Solid black background */
   text-align: center; /* Center align the content horizontally */
-  color: white; /* Text color */
+  color: 0000000; /* Text color */
 }
 
 .about-section p {
